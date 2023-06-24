@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { buttonVariants } from '../ui/Button'
 import { getAuthSession } from '@/lib/auth'
+import AccountMenu from '../modules/AccountMenu'
 
 
 const Navbar = async () => {
@@ -30,13 +31,20 @@ const Navbar = async () => {
 
         {/* Button Bar  */}
 
-        {/* Login  */}
-        {session ? (
-          <p>Logged In</p>
-        ) : (
-          <Link href="/login" className={buttonVariants()}>Login</Link>
-        )}
-        {/* Account Dropdown Menu */}
+        
+        {session?.user ? (
+
+        /* Account Dropdown Menu */
+            <AccountMenu user={session.user} />
+          
+        /* Login  */
+            ) : (
+              <Link href="/login" className={buttonVariants()}>
+                Login
+              </Link>
+            )
+        }
+        
       </div>      
     </div>
   )
