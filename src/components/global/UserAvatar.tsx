@@ -2,10 +2,11 @@
 
 import { FC } from 'react'
 import { User } from 'next-auth'
-import { Avatar, AvatarProps } from '@radix-ui/react-avatar'
 import Image from 'next/image'
 import { Icons } from '../ui/Icons'
-import { AvatarFallback } from '../ui/Avatar'
+import { Avatar, AvatarFallback } from '../ui/Avatar'
+import { AvatarProps } from '@radix-ui/react-avatar'
+
 
 
 interface UserAvatarProps extends AvatarProps {
@@ -14,7 +15,7 @@ interface UserAvatarProps extends AvatarProps {
 
 const UserAvatar: FC<UserAvatarProps> = ({ user, ...props }) => {
   return (
-    <Avatar>
+    <Avatar {...props}>
         {user.image ? (
             <div className='relative aspect-square h-full w-full'>
                 <Image 
@@ -22,7 +23,7 @@ const UserAvatar: FC<UserAvatarProps> = ({ user, ...props }) => {
                     alt='Avatar' 
                     fill
                     referrerPolicy='no-referrer'
-                    className='rounded-full'
+                    // className='rounded-full'
                 />
             </div>
         ) : (

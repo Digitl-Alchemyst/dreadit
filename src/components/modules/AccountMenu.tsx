@@ -16,7 +16,7 @@ const AccountMenu: FC<AccountMenuProps> = ({user}) => {
             name: user.name || null,
             image: user.image || null,
           }}
-          clas
+          className='h-11 w-11 rounded-full bg-zinc-950 shadow-md shadow-rose-500/50'
         />
         </DropdownMenuTrigger>
       </DropdownMenu>
