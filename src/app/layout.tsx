@@ -16,6 +16,7 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
+  authModal: React.ReactNode
 }) {
   return (
     <html lang='en' className={cn(
