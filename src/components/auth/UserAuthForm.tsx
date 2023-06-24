@@ -24,10 +24,6 @@ const UserAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
                 title: 'There was an error logging in with Google',
                 description: 'Please configure the Google OAuth provider correctly.',
                 variant: 'destructive',
-                // status: 'error',
-                // duration: 5000,
-                isClosable: true,
-                position: 'bottom-right'
             })
         } finally {
             setIsLoading(false)
