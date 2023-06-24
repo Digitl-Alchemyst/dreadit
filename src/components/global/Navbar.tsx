@@ -17,7 +17,7 @@ const Navbar = () => {
             className='bg-rose-900 rounded-full'
           />
 
-          <p className="hidden md:block text-2xl font-bold text-rose-000">dreadit</p>
+          <p className="hidden md:block text-2xl font-bold text-rose-900">dreadit</p>
         </Link>
 
         {/* Subreddit Dropdown Menu  */}
