@@ -23,7 +23,7 @@ export default function RootLayout({
       inter.className
     )}>
       <body className='min-h-screen pt-12 bg bg-zinc-950 antialiased'>
-
+        {/* @ts-expect-error server component */}
         <Navbar />
         
         <div className='container max-w-7xl mx-auto h-full pt-12'>
