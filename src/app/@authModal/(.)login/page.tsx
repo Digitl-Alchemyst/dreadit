@@ -1,8 +1,7 @@
 import SignIn from '@/components/auth/SignIn'
 import CloseModal from '@/components/ui/CloseModal'
-import { FC } from 'react'
 
-const page: FC = () => {
+const page = () => {
   return (
     <div className='fixed inset-0 bg-zinc-950/40 z-10'>
       <div className='container flex items-center h-full max-w-lg mx-auto'>

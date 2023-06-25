@@ -1,20 +1,21 @@
-import { buttonVariants } from '@/components/ui/Button'
-import { cn } from '@/lib/utils'
-import Link from 'next/link'
-import { FC } from 'react'
+import SignUp from '@/components/auth/SignIn'
+import CloseModal from '@/components/ui/CloseModal'
 
-
-
-
-const page: FC = () => {
+const page = () => {
   return (
-  <div className='absolute inset-0'>
-    <div className='h-full max-2-2xl mx-auto flex flex-col items-center justify-center gap-20'>
-        <Link href='/' className={cn(buttonVariants({variant: 'ghost'}), 'self-center -mt-20')}> {/* self-start */}
-            Home
-        </Link>
+    <div className='fixed inset-0 bg-zinc-950/40 z-10'>
+      <div className='container flex items-center h-full max-w-lg mx-auto'>
+        <div className='relative w-full h-fit py-10 px-2 rounded-lg'>
+          <div className='absolute top-4 right-6'>
+            <CloseModal />
+            
+          </div>
+
+          <SignUp />
+        </div>
       </div>
-  </div>
-)}
+    </div>
+  )
+}
 
 export default page
