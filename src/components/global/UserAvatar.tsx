@@ -1,5 +1,3 @@
-'use client'
-
 import { FC } from 'react'
 import { User } from 'next-auth'
 import Image from 'next/image'
