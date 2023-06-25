@@ -1,5 +1,5 @@
-import SignUp from '@/components/auth/SignIn'
-import CloseModal from '@/components/ui/CloseModal'
+import SignUp from '@/components/auth/SignIn';
+import CloseModal from '@/components/ui/CloseModal';
 
 const page = () => {
   return (
@@ -11,11 +11,11 @@ const page = () => {
             
           </div>
 
-          <SignUp />
+          <SignUp isModal={true} />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
