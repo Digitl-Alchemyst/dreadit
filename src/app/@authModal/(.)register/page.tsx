@@ -1,4 +1,4 @@
-import SignUp from '@/components/auth/SignIn';
+import SignUp from '@/components/auth/SignUp';
 import CloseModal from '@/components/ui/CloseModal';
 
 const page = () => {
